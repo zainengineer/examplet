@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC
+	"-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>PHP error</title>
+
+<style type="text/css">
+/*<![CDATA[*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+body{line-height:1;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:none;}
+:focus{outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+
+body {
+	font: normal 9pt "Verdana";
+	color: #000;
+	background: #fff;
+}
+
+h1 {
+	font: normal 18pt "Verdana";
+	color: #f00;
+	margin-bottom: .5em;
+}
+
+h2 {
+	font: normal 14pt "Verdana";
+	color: #800000;
+	margin-bottom: .5em;
+}
+
+h3 {
+	font: bold 11pt "Verdana";
+}
+
+pre {
+	font: normal 11pt Menlo, Consolas, "Lucida Console", Monospace;
+}
+
+pre span.error {
+	display: block;
+	background: #fce3e3;
+}
+
+pre span.ln {
+	color: #999;
+	padding-right: 0.5em;
+	border-right: 1px solid #ccc;
+}
+
+pre span.error-ln {
+	font-weight: bold;
+}
+
+.container {
+	margin: 1em 4em;
+}
+
+.version {
+	color: gray;
+	font-size: 8pt;
+	border-top: 1px solid #aaa;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+
+.message {
+	color: #000;
+	padding: 1em;
+	font-size: 11pt;
+	background: #f3f3f3;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom: 1em;
+	line-height: 160%;
+}
+
+.source {
+	margin-bottom: 1em;
+}
+
+.code pre {
+	background-color: #ffe;
+	margin: 0.5em 0;
+	padding: 0.5em;
+	line-height: 125%;
+	border: 1px solid #eee;
+}
+
+.source .file {
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+.traces {
+	margin: 2em 0;
+}
+
+.trace {
+	margin: 0.5em 0;
+	padding: 0.5em;
+}
+
+.trace.app {
+	border: 1px dashed #c00;
+}
+
+.trace .number {
+	text-align: right;
+	width: 2em;
+	padding: 0.5em;
+}
+
+.trace .content {
+	padding: 0.5em;
+}
+
+.trace .plus,
+.trace .minus {
+	display:inline;
+	vertical-align:middle;
+	text-align:center;
+	border:1px solid #000;
+	color:#000;
+	font-size:10px;
+	line-height:10px;
+	margin:0;
+	padding:0 1px;
+	width:10px;
+	height:10px;
+}
+
+.trace.collapsed .minus,
+.trace.expanded .plus,
+.trace.collapsed pre {
+	display: none;
+}
+
+.trace-file {
+	cursor: pointer;
+	padding: 0.2em;
+}
+
+.trace-file:hover {
+	background: #f0ffff;
+}
+/*]]>*/
+</style>
+</head>
+
+<body>
+<div class="container">
+	<h1>PHP error</h1>
+
+	<p class="message">
+		Declaration of YdClientScript::registerScript() should be compatible with CClientScript::registerScript($id, $script, $position = NULL, array $htmlOptions = Array)	</p>
+
+	<div class="source">
+		<p class="file">G:\dev\GitHub\examplet\app\vendor\mrphp\yii-dressing\src\components\YdClientScript.php(7)</p>
+		<div class="code"><pre><span class="ln">01</span> &lt;?php
+<span class="ln">02</span> 
+<span class="ln">03</span> /**
+<span class="ln">04</span>  *
+<span class="ln">05</span>  */
+<span class="ln">06</span> class YdClientScript extends CClientScript
+<span class="error"><span class="ln error-ln">07</span> {
+</span><span class="ln">08</span> 
+<span class="ln">09</span>     /**
+<span class="ln">10</span>      * @var array the registered CSS files (CSS URL=&gt;media type).
+<span class="ln">11</span>      * @since 1.0.4
+<span class="ln">12</span>      */
+<span class="ln">13</span>     protected $cssFiles = array();
+<span class="ln">14</span>     /**
+<span class="ln">15</span>      * @var array
+<span class="ln">16</span>      */
+<span class="ln">17</span>     protected $cssFilesOrder = array();
+<span class="ln">18</span> 
+<span class="ln">19</span>     /**
+</pre></div>	</div>
+
+	<div class="traces">
+		<h2>Stack Trace</h2>
+				<table style="width:100%;">
+						<tr class="trace core collapsed">
+			<td class="number">
+				#0			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;G:\dev\GitHub\examplet\app\vendor\yiisoft\yii\framework\YiiBase.php(196): <strong>YiiBase</strong>::<strong>import</strong>(&quot;YdClientScript&quot;, true)				</div>
+
+				<div class="code"><pre><span class="ln">191</span>         }
+<span class="ln">192</span>         else
+<span class="ln">193</span>             throw new CException(Yii::t(&#039;yii&#039;,&#039;Object configuration must be an array containing a &quot;class&quot; element.&#039;));
+<span class="ln">194</span> 
+<span class="ln">195</span>         if(!class_exists($type,false))
+<span class="error"><span class="ln error-ln">196</span>             $type=Yii::import($type,true);
+</span><span class="ln">197</span> 
+<span class="ln">198</span>         if(($n=func_num_args())&gt;1)
+<span class="ln">199</span>         {
+<span class="ln">200</span>             $args=func_get_args();
+<span class="ln">201</span>             if($n===2)
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#1			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;G:\dev\GitHub\examplet\app\vendor\yiisoft\yii\framework\base\CModule.php(386): <strong>YiiBase</strong>::<strong>createComponent</strong>(array(&quot;class&quot; =&gt; &quot;YdClientScript&quot;))				</div>
+
+				<div class="code"><pre><span class="ln">381</span>             $config=$this-&gt;_componentConfig[$id];
+<span class="ln">382</span>             if(!isset($config[&#039;enabled&#039;]) || $config[&#039;enabled&#039;])
+<span class="ln">383</span>             {
+<span class="ln">384</span>                 Yii::trace(&quot;Loading \&quot;$id\&quot; application component&quot;,&#039;system.CModule&#039;);
+<span class="ln">385</span>                 unset($config[&#039;enabled&#039;]);
+<span class="error"><span class="ln error-ln">386</span>                 $component=Yii::createComponent($config);
+</span><span class="ln">387</span>                 $component-&gt;init();
+<span class="ln">388</span>                 return $this-&gt;_components[$id]=$component;
+<span class="ln">389</span>             }
+<span class="ln">390</span>         }
+<span class="ln">391</span>     }
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#2			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;G:\dev\GitHub\examplet\app\vendor\yiisoft\yii\framework\base\CModule.php(103): <strong>CModule</strong>-><strong>getComponent</strong>(&quot;clientScript&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">098</span>      * @return mixed the named property value
+<span class="ln">099</span>      */
+<span class="ln">100</span>     public function __get($name)
+<span class="ln">101</span>     {
+<span class="ln">102</span>         if($this-&gt;hasComponent($name))
+<span class="error"><span class="ln error-ln">103</span>             return $this-&gt;getComponent($name);
+</span><span class="ln">104</span>         else
+<span class="ln">105</span>             return parent::__get($name);
+<span class="ln">106</span>     }
+<span class="ln">107</span> 
+<span class="ln">108</span>     /**
+</pre></div>			</td>
+		</tr>
+						<tr class="trace app expanded">
+			<td class="number">
+				#3			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;G:\dev\GitHub\examplet\app\vendor\mrphp\yii-dressing\src\YiiDressing.php(89): <strong>CModule</strong>-><strong>__get</strong>(&quot;clientScript&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">84</span>     public function registerScripts()
+<span class="ln">85</span>     {
+<span class="ln">86</span>         if (YdHelper::isCli())
+<span class="ln">87</span>             return;
+<span class="ln">88</span>         // register style
+<span class="error"><span class="ln error-ln">89</span>         Yii::app()-&gt;clientScript-&gt;registerCSSFile($this-&gt;getAssetsUrl() . &#039;/yii-dressing/css/yii-dressing.css&#039;);
+</span><span class="ln">90</span>         // dropdown JS doesn&#039;t work on iPad - https://github.com/twitter/bootstrap/issues/2975#issuecomment-6659992
+<span class="ln">91</span>         Yii::app()-&gt;clientScript-&gt;registerScript(&#039;bootstrap-dropdown-fix&#039;, &quot;$(&#039;body&#039;).on(&#039;touchstart.dropdown&#039;, &#039;.dropdown-menu&#039;, function (e) { e.stopPropagation(); });&quot;, CClientScript::POS_END);
+<span class="ln">92</span>     }
+<span class="ln">93</span> 
+<span class="ln">94</span> }
+</pre></div>			</td>
+		</tr>
+						<tr class="trace app expanded">
+			<td class="number">
+				#4			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;G:\dev\GitHub\examplet\app\vendor\mrphp\yii-dressing\src\YiiDressing.php(67): <strong>YiiDressing</strong>-><strong>registerScripts</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">62</span>             &#039;YdToken&#039; =&gt; &#039;token&#039;,
+<span class="ln">63</span>             &#039;YdUser&#039; =&gt; &#039;user&#039;,
+<span class="ln">64</span>             &#039;YdUserToRole&#039; =&gt; &#039;user_to_role&#039;,
+<span class="ln">65</span>         ));
+<span class="ln">66</span> 
+<span class="error"><span class="ln error-ln">67</span>         $this-&gt;registerScripts();
+</span><span class="ln">68</span> 
+<span class="ln">69</span>     }
+<span class="ln">70</span> 
+<span class="ln">71</span>     /**
+<span class="ln">72</span>      * @return string
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#5			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;G:\dev\GitHub\examplet\app\vendor\yiisoft\yii\framework\base\CModule.php(387): <strong>YiiDressing</strong>-><strong>init</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">382</span>             if(!isset($config[&#039;enabled&#039;]) || $config[&#039;enabled&#039;])
+<span class="ln">383</span>             {
+<span class="ln">384</span>                 Yii::trace(&quot;Loading \&quot;$id\&quot; application component&quot;,&#039;system.CModule&#039;);
+<span class="ln">385</span>                 unset($config[&#039;enabled&#039;]);
+<span class="ln">386</span>                 $component=Yii::createComponent($config);
+<span class="error"><span class="ln error-ln">387</span>                 $component-&gt;init();
+</span><span class="ln">388</span>                 return $this-&gt;_components[$id]=$component;
+<span class="ln">389</span>             }
+<span class="ln">390</span>         }
+<span class="ln">391</span>     }
+<span class="ln">392</span> 
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#6			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;G:\dev\GitHub\examplet\app\vendor\yiisoft\yii\framework\base\CModule.php(523): <strong>CModule</strong>-><strong>getComponent</strong>(&quot;dressing&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">518</span>      * Loads static application components.
+<span class="ln">519</span>      */
+<span class="ln">520</span>     protected function preloadComponents()
+<span class="ln">521</span>     {
+<span class="ln">522</span>         foreach($this-&gt;preload as $id)
+<span class="error"><span class="ln error-ln">523</span>             $this-&gt;getComponent($id);
+</span><span class="ln">524</span>     }
+<span class="ln">525</span> 
+<span class="ln">526</span>     /**
+<span class="ln">527</span>      * Preinitializes the module.
+<span class="ln">528</span>      * This method is called at the beginning of the module constructor.
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#7			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;G:\dev\GitHub\examplet\app\vendor\yiisoft\yii\framework\base\CApplication.php(163): <strong>CModule</strong>-><strong>preloadComponents</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">158</span>         $this-&gt;initSystemHandlers();
+<span class="ln">159</span>         $this-&gt;registerCoreComponents();
+<span class="ln">160</span> 
+<span class="ln">161</span>         $this-&gt;configure($config);
+<span class="ln">162</span>         $this-&gt;attachBehaviors($this-&gt;behaviors);
+<span class="error"><span class="ln error-ln">163</span>         $this-&gt;preloadComponents();
+</span><span class="ln">164</span> 
+<span class="ln">165</span>         $this-&gt;init();
+<span class="ln">166</span>     }
+<span class="ln">167</span> 
+<span class="ln">168</span> 
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#8			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;G:\dev\GitHub\examplet\app\vendor\yiisoft\yii\framework\YiiBase.php(125): <strong>CApplication</strong>-><strong>__construct</strong>(&quot;G:\dev\GitHub\examplet\app\public/../app/config/web.php&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">120</span>      * to the constructor of the application class.
+<span class="ln">121</span>      * @return mixed the application instance
+<span class="ln">122</span>      */
+<span class="ln">123</span>     public static function createApplication($class,$config=null)
+<span class="ln">124</span>     {
+<span class="error"><span class="ln error-ln">125</span>         return new $class($config);
+</span><span class="ln">126</span>     }
+<span class="ln">127</span> 
+<span class="ln">128</span>     /**
+<span class="ln">129</span>      * Returns the application singleton or null if the singleton has not been created yet.
+<span class="ln">130</span>      * @return CApplication the application singleton, null if the singleton has not been created yet.
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#9			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;G:\dev\GitHub\examplet\app\vendor\yiisoft\yii\framework\YiiBase.php(98): <strong>YiiBase</strong>::<strong>createApplication</strong>(&quot;CWebApplication&quot;, &quot;G:\dev\GitHub\examplet\app\public/../app/config/web.php&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">093</span>      * If not, the directory will be defaulted to &#039;protected&#039;.
+<span class="ln">094</span>      * @return CWebApplication
+<span class="ln">095</span>      */
+<span class="ln">096</span>     public static function createWebApplication($config=null)
+<span class="ln">097</span>     {
+<span class="error"><span class="ln error-ln">098</span>         return self::createApplication(&#039;CWebApplication&#039;,$config);
+</span><span class="ln">099</span>     }
+<span class="ln">100</span> 
+<span class="ln">101</span>     /**
+<span class="ln">102</span>      * Creates a console application instance.
+<span class="ln">103</span>      * @param mixed $config application configuration.
+</pre></div>			</td>
+		</tr>
+						<tr class="trace app expanded">
+			<td class="number">
+				#10			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;G:\dev\GitHub\examplet\app\public\index.php(49): <strong>YiiBase</strong>::<strong>createWebApplication</strong>(&quot;G:\dev\GitHub\examplet\app\public/../app/config/web.php&quot;)				</div>
+
+				<div class="code"><pre><span class="ln">44</span>     trigger_error(&#039;cannot find framework file at &quot;&#039; . $yii . &#039;&quot;&#039;, E_USER_ERROR);
+<span class="ln">45</span> }
+<span class="ln">46</span> require_once($yii);
+<span class="ln">47</span> 
+<span class="ln">48</span> // run the Yii app (Yii-Haw!)
+<span class="error"><span class="ln error-ln">49</span> Yii::createWebApplication($config)-&gt;run();</span></pre></div>			</td>
+		</tr>
+				</table>
+	</div>
+
+	<div class="version">
+		2013-09-29 01:55:15 Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.7 <a href="http://www.yiiframework.com/">Yii Framework</a>/1.1.14	</div>
+</div>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+var traceReg = new RegExp("(^|\\s)trace-file(\\s|$)");
+var collapsedReg = new RegExp("(^|\\s)collapsed(\\s|$)");
+
+var e = document.getElementsByTagName("div");
+for(var j=0,len=e.length;j<len;j++){
+	if(traceReg.test(e[j].className)){
+		e[j].onclick = function(){
+			var trace = this.parentNode.parentNode;
+			if(collapsedReg.test(trace.className))
+				trace.className = trace.className.replace("collapsed", "expanded");
+			else
+				trace.className = trace.className.replace("expanded", "collapsed");
+		}
+	}
+}
+/*]]>*/
+</script>
+
+</body>
+</html>

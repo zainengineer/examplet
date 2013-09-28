@@ -1,0 +1,60 @@
+Warning: PHP Startup: Unable to load dynamic library The specified module could not be found.
+
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_bz2.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_curl.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_mbstring.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_exif.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_fileinfo.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_gd2.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_gettext.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_imap.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_mysql.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_pdo_mysql.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_pdo_odbc.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_soap.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_sockets.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_sqlite3.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_tidy.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_xmlrpc.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library '\xampp\php\ext\php_openssl.dll' - The specified module could not be found.
+ in Unknown on line 0
+
+Warning: Cannot open '\xampp\php\extras\browscap.ini' for reading in Unknown on line 0
+
+
+
+
+
